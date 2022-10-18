@@ -41,37 +41,59 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-.section-hero {
-    background-color: #fdf2e9;
-    padding: 4.8rem 0 9.6rem 0;
-}
-.hero {
-    max-width: 130rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 9.6rem;
+
+/****************************************/
+/* GENERAL COMPONENTS */
+/****************************************/
+
+.container {
+    max-width: 120rem;
     padding: 0 3.2rem;
+    margin: 0 auto;
 }
 
-.hero-text-box {
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
 
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary, {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #333;
 }
 
 .heading-primary {
     font-size: 5.2rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
     line-height: 1.05;
-    color: #333;
     margin-bottom: 3.2rem;
 }
 
-.hero-description {
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+}
+
+.subheading {
+    display: block;
     font-size: 2rem;
-    color:#555;
-    margin-bottom: 4.8rem;
+    font-weight: 500;
+    color:#e67e22;
+    margin-bottom: 1.6rem;
+}
+
+.heading-tertiary {
+
 }
 
 .btn:link,
@@ -107,6 +129,93 @@ body {
 
     /* border inside */
     box-shadow: inset 0 0 0 3px white;
+}
+
+/****************************************/
+/* HEADER */
+/****************************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#fdf2e9;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.logo {
+    height: 2.2rem;
+}
+
+/****************************************/
+/* NAV */
+/****************************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items:center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color:#cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    background-color: #e67e22;
+    border-radius: 1rem;
+    color:white;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color:#cf711f;
+}
+/****************************************/
+/* HERO SECTION */
+/****************************************/
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9.6rem;
+    padding: 0 3.2rem;
+}
+
+.hero-text-box {
+
+}
+
+.hero-description {
+    font-size: 2rem;
+    color:#555;
+    margin-bottom: 4.8rem;
 }
 
 .hero-img-box {
@@ -148,4 +257,16 @@ body {
 .delivered-text span {
     color: #e67e22;
     font-weight: bold;
+}
+
+/****************************************/
+/* HOW IT WORKS SECTION */
+/****************************************/
+
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.step-img {
+    width: 50%;
 }
