@@ -264,3 +264,106 @@ body {
     filter:none;
     opacity: 100%;
 }
+/****************************************/
+/* Meals section */
+/****************************************/
+
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+    border-radius: 1rem;
+    overflow:hidden;
+    transition: all 0.4s;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 4.8rem 8.9rem rgba(0,0,0,0.06);
+}
+.meal-tags {
+    margin-bottom: 1.2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 10rem;
+}
+
+.tag-vegeterian {
+    background-color: #51cf66;
+}
+
+.tag-paleo {
+    background-color: #f2ff43;
+}
+
+.meal-title {
+    font-size: 2.4rem;
+    color:#333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-atributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.meal-atribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items:center;
+    gap: 1.6rem;
+}
+.meat-img {
+    width: 100%;
+}
+
+.meal-icon {
+    color:#cf711f;
+    width: 2.4rem;
+    height: 2.4rem;
+    
+}
+
+strong {
+    font-weight: 500;
+}
+
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items:center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color:#e67e22;
+}
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 3.8rem;
+}
